@@ -1,0 +1,19 @@
+<div class="formRegistroYLogin">
+<h1>Login</h1>
+<div class="formLogin">
+<form action="/api/sessions/login" method="POST">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <button class="btn" type="submit">Login</button> 
+    <a href="/" class="volver">Volver</a>
+</form>
+</div>
+<div class="formLogin formRegistro">
+    <h2>Si todavía no te registrate, puedes ahcerlo aqui!!</h2>
+<button class="btn registrarse"><a href="/register">Registrarse</a></button>
+</div>
+</div>

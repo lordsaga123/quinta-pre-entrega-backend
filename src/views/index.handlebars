@@ -1,0 +1,21 @@
+<div class="botones">
+    <button class="boton"><a href="/api/sessions/logout">Login</a></button>
+    <button class="boton"><a href="/register">Registrarse</a></button>
+</div>
+
+{{#if user}}
+<div>
+    <p>Bienvenido, {{user.first_name}} {{user.last_name}}! </p>
+</div>
+{{/if}}
+
+<h1>Mis productos</h1>
+<div class="contenedorCards">
+    {{#each productos}}
+    <div class="card">
+        <p>{{this.title}} </p>
+        <p>{{this.description}} </p>
+        <p>{{this.price}} </p>
+    </div>
+    {{/each}}
+</div>
